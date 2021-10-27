@@ -5,14 +5,96 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
-        <title>Covid Management System</title>
+        <title>Traditional Korean Dishes</title>
     </head>
     <body>
         <h1 class="index">Traditional Korean Dishes</h1>
-        <h2>Add a Patient</h2>
-        <form class= "inputForm" id="siteForm" action="/manage_patients/add" method="POST">
+        <h2>*Select one dish, then click submit to know more about it!</h2>
+        <form class= "inputForm" id="siteForm" action="/dish" method="POST">
 
-            <input class="add" type="submit" value="Add">
+            <h2>Stews</h2>
+            <fieldset>
+                <div>
+                    <input type="radio" value="Kimchi-jjigae" name="group1" id="Kimchi-jjigae" checked>
+                    <label for="Kimchi-jjigae">Kimchi-jjigae (Kimchi stew)</label>
+                </div>
+                <div>
+                    <input type="radio" value="Doenjang-jjigae" name="group1" id="Doenjang-jjigae">
+                    <label for="Doenjang-jjigae">Doenjang-jjigae (Soybean paste stew)</label>
+                </div>
+            </fieldset>
+
+            <h2>Soups</h2>
+            <fieldset>
+                <div>
+                    <input type="radio" value="Gamja-tang" name="group1" id="gamja-tang">
+                    <label for="gamja-tang">Gamja-tang (Pork back-bone soup)</label>
+                </div>
+                <div>
+                    <input type="radio" value="Galbi-tang" name="group1" id="Galbi-tang">
+                    <label for="Galbi-tang">Galbi-tang (Short rib soup)</label>
+                </div>
+                <div>
+                    <input type="radio" value="Samgye-tang" name="group1" id="Samgye-tang">
+                    <label for="Samgye-tang">Samgye-tang (Ginseng chicken soup)</label>
+                </div>
+            </fieldset>
+
+            <h2>Meat Dishes</h2>
+            <fieldset>
+                <div>
+                    <input type="radio" value="Bulgogi" name="group1" id="Bulgogi">
+                    <label for="Bulgogi">Bulgogi (Marinated slices of pork/beef)</label>
+                </div>
+                <div>
+                    <input type="radio" value="Bossam" name="group1" id="Bossam">
+                    <label for="Bossam">Bossam (Thinly sliced pork shoulder)</label>
+                </div>
+                <div>
+                    <input type="radio" value="Galbi-jjim" name="group1" id="Galbi-jjim">
+                    <label for="Galbi-jjim">Galbi-jjim (Braised short ribs)</label>
+                </div>
+            </fieldset>
+
+            <h2>Noodles Dishes</h2>
+            <fieldset>
+                <div>
+                    <input type="radio" value="Naengmyeon" name="group1" id="Naengmyeon">
+                    <label for="Naengmyeon">Naengmyeon (Cold noodles)</label>
+                </div>
+                <div>
+                    <input type="radio" value="Japchae" name="group1" id="Japchae">
+                    <label for="Japchae">Japchae (Stir-fried glass noodles)</label>
+                </div>
+                <div>
+                    <input type="radio" value="Jajangmyeon" name="group1" id="Jajangmyeon">
+                    <label for="Jajangmyeon">Jajangmyeon (Noodles in black bean sauce)</label>
+                </div>
+                <div>
+                    <input type="radio" value="Jjamppong" name="group1" id="Jjamppong">
+                    <label for="Jjamppong">Jjamppong (Spicy seafood noodle soup)</label>
+                </div>
+            </fieldset>
+
+            <h2>Other popular dishes </h2>
+            <fieldset>
+                <div>
+                    <input type="radio" value="Bibimbap" name="group1" id="Bibimbap">
+                    <label for="Bibimbap">Bibimbap (Mixed rice with vegetables)</label>
+                </div>
+                <div>
+                    <input type="radio" value="Tteokbokki" name="group1" id="Tteokbokki">
+                    <label for="Tteokbokki">Tteokbokki (Spicy rice cakes)</label>
+                </div>
+                <div>
+                    <input type="radio" value="Dalgona" name="group1" id="Dalgona">
+                    <label for="Dalgona">Dalgona (Korean sugar candy)</label>
+                </div>
+            </fieldset>
+
+
+
+            <input class="add" type="submit" value="SUBMIT" title="Click submit to see images and a description about the dish">
         </form>
     </body>
 </html>
