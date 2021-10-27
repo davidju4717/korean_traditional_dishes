@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: Calibri;
+    padding-bottom: 100px;
+    background-image:  url('/static/korea_street.jpg');
+    background-size: cover;
+}
+h1, h2 {
+    color:white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+h3 {
+    color:red;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.index {
+    font-size: 50px;
+}
+a {
+    text-decoration: none;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #444;
+    font-size: 20px;
+}
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+}
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.navbar a.active{
+    background-color: #111;
+    color: white;
+}
+table,
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+}
+table{
+    border-radius: 5px;
+    overflow:hidden;
+}
+th {
+    background-color: #1d1d1d;
+    color: white;
+}
+.center-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+input, select, button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Calibri;
+    font-size: 15px;
+}
+.add,.delete, button {
+    background-color: #1d1d1d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.delete,.cancel,.book {
+    margin: 1px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: darkred;
+}
+
+.book {
+    background-color: darkgreen;
+}
+
+.index_button {
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    margin: 35px;
+    font-size: 25px;
+    vertical-align: top;
+
+}
+.inputForm {
+    border: 2px solid grey;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px;
+    background-color: white;
+}
+form > p {
+    text-align: center;
+}
+
+
