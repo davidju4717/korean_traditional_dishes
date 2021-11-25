@@ -5,70 +5,19 @@ body {
     padding-bottom: 100px;
     background-image:  url('/static/korea_street.jpg');
     background-size: cover;
-}
-h1, h2 {
     color:white;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
-h3 {
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .index {
     font-size: 50px;
 }
-a {
-    text-decoration: none;
-}
 
-
-input, select, button {
-    /*width: 100%;*/
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-family: Calibri;
-    font-size: 15px;
-}
-.add,.delete, button {
-    background-color: darkred;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-.delete,.cancel,.book {
-    margin: 1px;
-    padding: 5px;
-    color: white;
-    cursor: pointer;
-}
-
-.cancel {
-    background-color: darkred;
-}
-
-.book {
-    background-color: darkgreen;
-}
-
-.index_button {
-    width: 250px;
-    height: 100px;
-    padding: 20px;
-    margin: 35px;
-    font-size: 25px;
-    vertical-align: top;
-
-}
 .inputForm {
     border: 2px white;
     width: 50%;
     margin: 0 auto;
     border-radius: 10px;
-    text-align: left;
     padding: 10px;
     background-color: black;
 }
@@ -77,20 +26,29 @@ fieldset {
     border-radius: 5px;
     font-size: 20px;
     margin: 10px;
+    text-align: left;
 }
-form > p, h2, h3 {
-    text-align: center;
-    color:white;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
+input, button {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Calibri;
+    font-size: 15px;
+    background-color: darkred;
+    color: white;
+    cursor: pointer;
+}
+
+.select {
+    width: 100%;
 }
 
 label {
     color:white;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
-input[type=submit] {
-    width: 100%;
 }
 
 .description {
@@ -100,9 +58,7 @@ input[type=submit] {
     border-radius: 10px;
 }
 
-/*style the images*/
 img {
-    /*display: block;*/
     max-width: 100%;
     border-radius: 8px;
     width: 500px;
