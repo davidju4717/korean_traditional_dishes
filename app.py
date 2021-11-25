@@ -23,5 +23,5 @@ def dish():
         data = {"imgSize": "LARGE", "fileType": "jpeg", "imgType": "photo", "num": 1, "q": dish}
         dish_image = requests.post(url, json=data).json()["0"]
 
-        # display both summary and image of the dish
+        # display name, summary and image of the dish
         return render_template("dish.html", dish=dish, dish_image=dish_image, dish_description=dish_description)
